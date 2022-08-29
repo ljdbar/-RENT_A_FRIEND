@@ -7,11 +7,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+<<<<<<< HEAD
     <%= javascript_include_tag "/assets/application.js", "data-turbo-track": "reload", defer: true %>
 
+=======
+    <%= javascript_include_tag "assets/application.js", "data-turbo-track": "reload", defer: true %>
+>>>>>>> a6d8c5a93cad5f429f6cc99e52f2bb6755c3a670
   </head>
 
   <body>
+    <%= render "shared/navbar" %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
