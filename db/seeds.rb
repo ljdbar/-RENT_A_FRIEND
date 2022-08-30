@@ -22,3 +22,5 @@ require 'faker'
   )
   puts "#{friend.id} created!"
 end
+
+# https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png
