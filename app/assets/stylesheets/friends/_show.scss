@@ -1,0 +1,85 @@
+.container {
+  margin: 50px auto;
+}
+
+.friend-card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.friend-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.friend-card-top .friend-info {
+  padding: 16px;
+}
+
+.friend-card-bottom {
+  display: flex;
+  // align-items: center;
+  margin-top: 25px;
+}
+
+.friend-card-bottom .friend-rate-card {
+  padding: 16px;
+}
+
+.friend-form{
+  width: 250px;
+}
+
+.col {
+  padding-bottom: 15px;
+}
+
+.col input {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.card-review {
+  // overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 840px;
+
+  // flex-grow: 1;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-gap: 16px;
+  // padding: 16px;
+}
+
+.card-review img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-review h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-review p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-review .card-review-infos {
+  padding: 16px;
+}

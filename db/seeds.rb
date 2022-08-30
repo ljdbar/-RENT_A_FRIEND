@@ -8,7 +8,7 @@
 
 require 'faker'
 
-50.times do
+10.times do
   friend = Friend.create!(
     user_id: 1,
     first_name: Faker::Name.first_name,
@@ -16,9 +16,11 @@ require 'faker'
     categories: %w[sports music funeral family date travel].sample,
     age: Faker::Number.between(from: 18, to: 70),
     location: Faker::Address.state,
-    daily_rate: Faker::Number.between(from: 10, to: 100),
+    daily_rate: Faker::Number.decimal(l_digits: 2),
     pronouns: 'mr',
     bio: 'thew jwefejwk jewfknfjkew fkjwenfgj wekjfbjkew fjkwe fjkwfe fjkew f'
   )
   puts "#{friend.id} created!"
 end
+
+# https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png
