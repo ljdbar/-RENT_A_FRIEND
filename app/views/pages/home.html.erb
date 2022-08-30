@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <div class="home-banner" style="background-image: url('https://images.unsplash.com/photo-1564590325500-35fd32a51fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3552&q=80')">
+  <h1>Pages#home</h1>
+  <p>Find me in app/views/pages/home.html.erb</p>
+</div> %>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1564590325500-35fd32a51fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3552&q=80);">
+  <div class="container">
+    <h1>Welcome to Rent-A-Friend</h1>
+    <p>Rent a friend or be a friend.</p>
+    <%= link_to "Start here", "friends#index", class: "btn btn-ghost" %>
+  </div>
+</div>
