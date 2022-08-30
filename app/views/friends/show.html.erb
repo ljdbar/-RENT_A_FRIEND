@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="friend-img">
+    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3560&q=80" alt="testing">
+  </div>
+
+  <div class="friend-info">
+    <h4>first_name last_name</h4>
+    <p>location</p>
+    <p>categories</p>
+    <p>pronouns</p>
+    <p>bio</p>
+  </div>
+
+  <div class="friend-form">
+    <div class="bg-white rounded p-3 shadow">
+      <h5>£9.9 <em>day</em> <%#= @friend.first_name %> </h5>
+
+      <div class="row">
+
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Start date">
+        </div>
+
+        <div class="col">
+          <input type="text" class="form-control" placeholder="End date">
+        </div>
+
+        <%= link_to "Reserve this friend", "/", class: "btn btn-primary" %>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="friend-rating">
+    <p>4.9 ⭐️⭐️⭐️⭐️⭐️</p>
+  </div>
+
+  <div class="friend-reviews">
+    <div class="card-review">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-review-infos">
+        <h2>Username</h2>
+        <p>Had a good time ❤️.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
