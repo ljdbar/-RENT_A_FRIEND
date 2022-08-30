@@ -11,15 +11,15 @@ class FriendsController < ApplicationController
     @friend = Friend.new
   end
 
-#   def create
-#     @friend = Friend.new(friend_params)
-#     @friend.save
-#     redirect_to friend_path(@friend)
-#   end
+  def create
+    @friend = Friend.new(friend_params)
+    @friend.save
+    redirect_to friend_path(@friend)
+  end
 
-#   private
+  private
 
-#   def friend_params
-#     params.require(:friend).permit(WHOLE BUNCH O SHIT)
-#   end
+  def friend_params
+    params.require(:friend).permit(WHOLE BUNCH O SHIT)
+  end
 end
