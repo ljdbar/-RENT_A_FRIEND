@@ -1,11 +1,4 @@
-<h2> Want to join our group</h2>
-<ol>
-<li> cool background image for half screen</li>
-<li>white text centered, "open your door to friendship...">placeholder</li>
-<li> Make a form so that you can submit your details</li>
-<li>BE able to upload a pic of yourself</li>
-<li> Maybe a map for your locations tomoz??</li>
-</ol>
+<h1 class="new-title"> Become a member of Friends</h1>
 
 <div class="container">
   <%= simple_form_for(@friend) do |x| %>
@@ -14,10 +7,20 @@
   <%= x.input :age, collection: 18..100 %>
   <%= x.input :location, label: "Hometown:" %>
   <%= x.input :pronouns, label: "Preferred Pronouns:", placeholder: "  /  " %>
-  <%= x.input :categories, collection: @categories, as: :check_boxes, label: "Friend capacity CHANGE THIS" %>
+  <%= x.input :categories, collection: @categories, include_hidden: false, label: "Friend capacity CHANGE THIS" %>
   <%= x.input :bio, placeholder: "Write a little bit about yourself..." %>
   <%# <%= x.input :photo, input_hmtl: {class: "hidden"} %>
   <%= x.input :daily_rate, label: "How much do you want to charge per day?", as: :float , placeholder: "£" %>
   <%= x.submit "Submit 😎" %>
   <% end %>
 </div>
+<!-- Add as: :check_box to categories input/association  -->
+
+<%# <h2> Want to join our group</h2>
+<ol>
+<li> cool background image for half screen</li>
+<li>white text centered, "open your door to friendship...">placeholder</li>
+<li> Make a form so that you can submit your details</li>
+<li>BE able to upload a pic of yourself</li>
+<li> Maybe a map for your locations tomoz??</li>
+</ol> %>
