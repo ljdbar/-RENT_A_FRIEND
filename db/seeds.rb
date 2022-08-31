@@ -45,6 +45,7 @@ User.all.each do |user|
   puts "#{friend.id} created!"
   index += 1
 end
+
 # 10.times do
 #   friend = Friend.create!(
 #     user_id: 1,

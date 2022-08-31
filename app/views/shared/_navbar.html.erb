@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to "/", class: "navbar-brand" do %>
       <%= image_tag "https://user-images.githubusercontent.com/84845571/187489374-b3b23746-81ca-4b2a-ad58-6bc7a817ebb1.png" %>
     <% end %>
 
@@ -8,15 +8,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <p class="new-friend-btn"><%= link_to "Become a friend", new_friend_path %></p>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Home", "/", class: "nav-link" %>
+            <%= link_to "Home", friends_path , class: "nav-link" %>
           </li>
           <li class="nav-item">
+            <%= link_to "Become a friend", new_friend_path, class: "nav-link" %>
             <%#= link_to "Messages", , class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
