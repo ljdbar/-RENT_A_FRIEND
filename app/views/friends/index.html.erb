@@ -1,17 +1,18 @@
 <%# <link rel="icon" href="app/assets/images/rlogo.png"> %>
-<h1 class="index_title">Available Friends</h1>
 
+<h1 class="index_title">Available Friends</h1>
 
 <div class="container">
   <div class="cards">
     <% @friends.each do |f| %>
       <div class="card-trip">
         <h5 class="location-title"><%= f.location %></h5>
-        <img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.6435-9/147420807_2850093175273433_51761852304375941_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pDTolIp1rH0AX8eUmOR&_nc_oc=AQlrlR0dgsK59d4vnc6wBuOuMQQICA5M4pienNY-OkyiYmeVoqlHwJwgGeiDRb_4dlU&_nc_ht=scontent-lhr8-1.xx&oh=00_AT9XVUKU0WRh9O4lq4q_DlIBe65NSJkjFPf6oLs8FwlDgQ&oe=63328235" />
+        <div class="friend-index-pic">
+          <a href="/friends/<%= f.id %>"><img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.6435-9/147420807_2850093175273433_51761852304375941_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pDTolIp1rH0AX8eUmOR&_nc_oc=AQlrlR0dgsK59d4vnc6wBuOuMQQICA5M4pienNY-OkyiYmeVoqlHwJwgGeiDRb_4dlU&_nc_ht=scontent-lhr8-1.xx&oh=00_AT9XVUKU0WRh9O4lq4q_DlIBe65NSJkjFPf6oLs8FwlDgQ&oe=63328235"/></a>
+        </div>
         <div class="card-trip-infos">
           <div>
             <h2><%= f.first_name %></h2>
-            <p class="see-more"><%= link_to "See more?", friend_path(f) %></p>
           </div>
           <h2 class="card-trip-pricing">£ <%= f.daily_rate %> per day</h2>
         </div>
