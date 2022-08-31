@@ -16,18 +16,18 @@ require 'faker'
   puts "#{user.id} created!"
 end
 
-addresses = ['201, 217 Commercial Rd, London E1 2BT',
-             'Unit 25, The Concourse Liverpool Street Station, London EC2M 7PY',
-             '432, 436 Bethnal Green Rd, London E2 0DJ',
-             '6/7 Holborn, London EC1N 2LL',
-             '1A Ludgate Hill, London EC4M 7AA',
-             '36/42 Kingsland High St, London E8 2JP',
-             '251/252 Upper St, London N1 1RU',
-             '359/363 Mare St, London E8 1HY',
-             '102, 106 The Hwy, London E1W 2BX',
-             '24, Cambridge Circus, 84-86 Charing Cross Rd, London WC2H 8AA',
-             '291B Oxford St, London W1C 2DT',
-             '25/27 Shaftesbury Ave, London W1D 7EQ']
+addresses = ['London E1 2BT',
+             'London EC2M 7PY',
+             'London E2 0DJ',
+             'London EC1N 2LL',
+             'London EC4M 7AA',
+             'London E8 2JP',
+             'London N1 1RU',
+             'London E8 1HY',
+             'London E1W 2BX',
+             'London WC2H 8AA',
+             'London W1C 2DT',
+             'London W1D 7EQ']
 index = 0
 
 User.all.each do |user|
