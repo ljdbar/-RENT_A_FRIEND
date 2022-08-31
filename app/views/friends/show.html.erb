@@ -2,15 +2,16 @@
 
  <div class="friend-card-top">
     <div class="friend-img">
+      <!-- Friend' image is not yet created !-->
       <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3560&q=80" alt="testing">
     </div>
 
     <div class="friend-info">
-      <h4>first_name last_name</h4>
-      <p>location</p>
-      <p>categories</p>
-      <p>pronouns</p>
-      <p>bio</p>
+      <h4><%= @friend.first_name %> <%= @friend.last_name %></h4>
+      <p><%= @friend.location %></p>
+      <p><%= @friend.categories %></p>
+      <p><%= @friend.pronouns %></p>
+      <div class="friend-bio"><p><%= @friend.bio %></p></div>
     </div>
   </div>
 
@@ -18,7 +19,7 @@
   <div class="friend-card-bottom">
     <div class="friend-form">
       <div class="bg-white rounded p-3 shadow">
-        <h6>£9.9 <em>day</em> <%#= @friend.first_name %> </h6>
+        <h6>£<%= @friend.daily_rate %> <em>day</em></h6>
 
         <div class="row">
 
@@ -28,7 +29,18 @@
             <%= link_to "Reserve this friend", "/", class: "btn btn-primary" %>
           </div>
           <hr>
-          <h6>Total price: <strong>£9.9</strong> <%#= @friend.first_name %> </h6>
+
+          <!-- Total price to be updated and need to work with the booking form !-->
+          <h6>Total price: <strong>£<%= @friend.daily_rate * 2 %></strong></h6>
+
+          <!--
+            <%= simple_form_for[@friend, @booking] do |f| %>
+                <%= f.input :start_date, as: :date, html5: true %>
+                <%= f.input :end_date, as: :date, html5: true %>
+                <%= f.submit %>
+            <% end %>
+          !-->
+
 
         </div>
       </div>
@@ -36,40 +48,49 @@
 
     <div class="friend-rate-card">
       <div class="friend-rating">
+        <!-- Frirend's rating is not yet created !-->
         <p>4.9 ⭐️⭐️⭐️⭐️⭐️</p>
       </div>
 
       <div class="friend-reviews">
 
         <div class="card-review">
+            <!-- User' image is not yet created !-->
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
-              <h2>Username</h2>
-              <p>Had a good time ❤️.</p>
+              <!-- Review and rating are not yet created !-->
+              <h2><%= @friend.user.username %></h2>
+              <p>Had a good time.</p>
             </div>
         </div>
 
           <div class="card-review">
+            <!-- User' image is not yet created !-->
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
-              <h2>Username</h2>
-              <p>Had a good time ❤️.</p>
+              <!-- Review and rating are not yet created !-->
+              <h2><%= @friend.user.username %></h2>
+              <p>Had a very good time.</p>
             </div>
           </div>
 
           <div class="card-review">
+            <!-- User' image is not yet created !-->
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
-              <h2>Username</h2>
-            <p>Had a good time ❤️.</p>
+              <!-- Review and rating are not yet created !-->
+              <h2><%= @friend.user.username %></h2>
+            <p>Had a really good time.</p>
             </div>
           </div>
 
           <div class="card-review">
+            <!-- User' image is not yet created !-->
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
-              <h2>Username</h2>
-              <p>Had a good time ❤️.</p>
+              <!-- Review and rating are not yet created !-->
+              <h2><%= @friend.user.username %></h2>
+              <p>Had a great time.</p>
             </div>
           </div>
 

@@ -1,5 +1,5 @@
 .container {
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 .friend-card-top {
@@ -17,10 +17,16 @@
   padding: 16px;
 }
 
+.friend-bio {
+  word-wrap: break-word;
+  width: 850px;
+}
+
 .friend-card-bottom {
   display: flex;
   // align-items: center;
   margin-top: 25px;
+  justify-content: space-between;
 }
 
 .friend-card-bottom .friend-rate-card {
@@ -51,7 +57,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  width: 840px;
+  width: 820px;
 
   // flex-grow: 1;
   // display: grid;
