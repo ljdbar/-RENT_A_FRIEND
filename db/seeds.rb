@@ -8,6 +8,9 @@
 
 require 'faker'
 
+Friend.destroy_all
+User.destroy_all
+
 12.times do
   name = "#{Faker::Name.first_name} #{Faker::Name.last_name}"
   email = Faker::Internet.email(name: name.to_s, separators: ['-'], domain: 'gmail')
