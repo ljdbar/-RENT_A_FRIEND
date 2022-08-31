@@ -8,9 +8,10 @@
   margin-bottom: 25px;
 }
 
-.friend-img img {
+.friend-img .cl_img {
   width: 250px;
   height: 250px;
+  object-fit: cover;
 }
 
 .friend-card-top .friend-info {
@@ -57,7 +58,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  width: 820px;
+  width: 1000px;
 
   // flex-grow: 1;
   // display: grid;

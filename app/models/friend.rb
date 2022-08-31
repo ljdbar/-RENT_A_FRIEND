@@ -1,5 +1,6 @@
 class Friend < ApplicationRecord
   belongs_to :user
+  has_one_attached :photo
 
   validates :first_name, :last_name, :bio, :categories, :pronouns, :location, :age, :daily_rate, presence: true
   validates :first_name, :last_name, format: { with: /\A[a-zA-Z]+\z/, message: "only allows letters" }
