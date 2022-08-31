@@ -8,7 +8,7 @@
       <div class="card-trip">
         <h5 class="location-title"><%= f.location %></h5>
         <div class="friend-index-pic">
-          <a href="/friends/<%= f.id %>"><img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.6435-9/147420807_2850093175273433_51761852304375941_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pDTolIp1rH0AX8eUmOR&_nc_oc=AQlrlR0dgsK59d4vnc6wBuOuMQQICA5M4pienNY-OkyiYmeVoqlHwJwgGeiDRb_4dlU&_nc_ht=scontent-lhr8-1.xx&oh=00_AT9XVUKU0WRh9O4lq4q_DlIBe65NSJkjFPf6oLs8FwlDgQ&oe=63328235"/></a>
+          <a href="/friends/<%= f.id %>"><%= cl_image_tag f.photo.key, class: 'cl_img' %></a>
         </div>
         <div class="card-trip-infos">
           <div>

@@ -16,12 +16,12 @@ class FriendsController < ApplicationController
   def create
     @friend = Friend.new(friend_params)
     @friend.user = current_user
-   if  @friend.save
+    if @friend.save
       redirect_to friend_path(@friend)
-   else
-    @categories = %w[sports music funeral family date travel]
-    render :new, status: :unprocessable_entity
-   end
+    else
+      @categories = %w[sports music funeral family date travel]
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private

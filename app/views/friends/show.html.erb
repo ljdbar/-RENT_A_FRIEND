@@ -3,7 +3,8 @@
  <div class="friend-card-top">
     <div class="friend-img">
       <!-- Friend' image is not yet created !-->
-      <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3560&q=80" alt="testing">
+      <%= cl_image_tag @friend.photo.key, class: 'cl_img'  %>
+      <%# <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3560&q=80" alt="testing"> %>
     </div>
 
     <div class="friend-info">
