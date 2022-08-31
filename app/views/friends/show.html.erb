@@ -24,23 +24,17 @@
         <div class="row">
 
           <div class="col">
-            <input type="text" class="form-control" placeholder="Start date">
-            <input type="text" class="form-control" placeholder="End date">
-            <%= link_to "Reserve this friend", "/", class: "btn btn-primary" %>
-          </div>
-          <hr>
-
-          <!-- Total price to be updated and need to work with the booking form !-->
-          <h6>Total price: <strong>£<%= @friend.daily_rate * 2 %></strong></h6>
-
-          <!--
-            <%= simple_form_for[@friend, @booking] do |f| %>
+            <%= simple_form_for [@friend, @booking] do |f| %>
                 <%= f.input :start_date, as: :date, html5: true %>
                 <%= f.input :end_date, as: :date, html5: true %>
                 <%= f.submit %>
             <% end %>
-          !-->
+          </div>
 
+          <hr>
+
+          <!-- Total price to be updated and need to work with the booking form !-->
+          <h6>Total price: <strong>£<%= @friend.daily_rate * 7 %></strong></h6>
 
         </div>
       </div>
