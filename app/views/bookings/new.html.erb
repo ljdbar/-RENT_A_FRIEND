@@ -1,2 +1,16 @@
-<h1>Bookings#new</h1>
-<p>Find me in app/views/bookings/new.html.erb</p>
+<div class="container">
+
+  <h3>Confirm and pay</h3>
+
+  <div class="card-product">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"/>
+    <div class="card-product-infos">
+      <p><%= @booking.friend.first_name %></p>
+      <p><%= @booking.start_date %></p>
+      <p><%= @booking.end_date %></p>
+    </div>
+  </div>
+
+  <%= link_to "Confirm", "/friends", class: "btn btn-flat" %>
+
+</div>
