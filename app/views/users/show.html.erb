@@ -8,7 +8,7 @@
 
   <div class="user-bookings">
 
-    <h4>Your Bookings History</h4>
+    <h3>Your Bookings History</h3>
 
     <% @user.bookings.each do |booking| %>
 
@@ -25,6 +25,10 @@
 
     </div>
 
+    <% end %>
+
+    <% if @user.bookings.empty? %>
+      <p>You don't have any booking.</p>
     <% end %>
 
   </div>

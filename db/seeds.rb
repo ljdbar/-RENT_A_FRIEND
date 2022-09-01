@@ -174,7 +174,7 @@ people.each do |p|
   domain = ['@gmail.com', '@hotmail.com', '@live.com'].sample
   email = "#{p['first_name']}#{p['last_name']}#{domain}"
   # puts email
-  username = "#{p['first_name']}_#{p['last_name']}#"
+  username = "#{p['first_name']}_#{p['last_name']}"
   user = User.create!(username: username, email: email, password: '123456')
   puts "User: #{user.id} created!"
 
