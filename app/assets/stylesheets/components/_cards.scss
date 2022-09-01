@@ -62,10 +62,10 @@
   border-radius: 5px;
 }
 
-.card-trip > img {
-  // height: 200px;
-  // width: 100%;
-  object-fit: cover;
+.card-trip .cl_img {
+  width: 100%;
+  height: 250px;
+  object-fit:cover;
 }
 
 .card-trip h2 {
@@ -94,10 +94,4 @@
   right: 16px;
   top: -20px;
   width: 40px;
-}
-
-.card-trip .cl_img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
 }
