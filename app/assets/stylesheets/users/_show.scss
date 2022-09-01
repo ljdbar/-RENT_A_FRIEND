@@ -1,16 +1,22 @@
-.container-booking {
+.container-user {
   margin: 50px auto;
 }
 
-.container-booking h3 {
-  margin: 50px auto;
+.user-bookings {
+  width: 800px;
+  margin: auto;
+}
+
+.user-info h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .card-booking {
   overflow: hidden;
   height: 200px;
-  width: 800px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -24,14 +30,8 @@
   object-fit: cover;
 }
 
-.card-booking h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
 .card-booking p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -42,16 +42,11 @@
   padding: 16px;
 }
 
-.btn-booking {
-  width: 800px;
-  margin: auto;
-  text-align: center;
-}
-
 .btn-flat {
   color: white;
-  margin: 50px auto;
-  padding: 8px 24px;
+  margin: 16px;
+  margin-left: 0px;
+  padding: 6px 12px;
   border-radius: 4px;
   background: #670BFF;
   transition: background 0.3s ease;

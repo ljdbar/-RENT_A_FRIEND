@@ -1,0 +1,25 @@
+<div class="container-booking">
+
+  <h3>Confirm and pay</h3>
+
+  <div class="card-booking">
+    <%= cl_image_tag @booking.friend.photo.key, class: 'cl_img' %>
+
+    <div class="card-booking-infos">
+      <p>Friend: <%= @booking.friend.first_name %> <%= @booking.friend.last_name %> </p>
+      <p>Start Date: <%= @booking.start_date %></p>
+      <p>End Date: <%= @booking.end_date %></p>
+      <p>Total Price: £ <%= @booking.total_price %></p>
+    </div>
+  </div>
+
+  <%= simple_form_for [@friend, @booking] do |f| %>
+     <%= f.input :start_date, as: :date, html5: true %>
+      <%= f.input :end_date, as: :date, html5: true %>
+
+    <div class="btn-booking">
+      <%= f.submit "Confirm", class: "btn btn-flat" %> <%= link_to "Back", friend_path(@booking.friend) , class: "btn btn-flat" %>
+    </div>
+  <% end %>
+
+</div>
