@@ -186,7 +186,7 @@ people.each do |p|
     location: p['location'],
     daily_rate: Faker::Number.decimal(l_digits: 2),
     pronouns: p['pronouns'],
-    bio: Faker::Lorem.sentence(word_count: 3, supplemental: false, random_words_to_add: 50)
+    bio: "Hi, I'm #{p['first_name'].titleize}, " + Faker::Lorem.sentence(word_count: 3, supplemental: false, random_words_to_add: 50)
   )
   puts "friend: #{friend.id} created!"
 
