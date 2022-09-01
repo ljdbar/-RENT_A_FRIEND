@@ -1,0 +1,32 @@
+<div class="container-user">
+
+  <div class="user-info">
+
+    <h2>Hello <%= @user.username %></h2>
+
+  </div>
+
+  <div class="user-bookings">
+
+    <h4>Your Bookings History</h4>
+
+    <% @user.bookings.each do |booking| %>
+
+    <div class="card-booking">
+      <%= cl_image_tag booking.friend.photo.key, class: 'cl_img' %>
+
+      <div class="card-booking-infos">
+        <p>Friend: <%= booking.friend.first_name %> <%= booking.friend.last_name %> </p>
+        <p>Start Date: <%= booking.start_date %></p>
+        <p>End Date: <%= booking.end_date %></p>
+        <p>Total Price: £ <%= booking.total_price %></p>
+        <%= link_to "Hang out again", friend_path(booking.friend) , class: "btn btn-flat" %>
+      </div>
+
+    </div>
+
+    <% end %>
+
+  </div>
+
+</div>

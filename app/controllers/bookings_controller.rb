@@ -2,16 +2,19 @@ class BookingsController < ApplicationController
   def new
     @booking = Booking.new
     @friend = Friend.find(params[:friend_id])
+    raise
   end
 
   def create
     @friend = Friend.find(params[:friend_id])
     @booking = Booking.new(booking_params)
+    @booking.total_price = (@booking.end_date - @booking.start_date) * @friend.daily_rate
+    @booking.user = current_user
     @booking.friend = @friend
-    if @booking.save
-      redirect_to friend_path(@friend)
+    if @booking.save!
+      redirect_to user_path(@booking.user)
     else
-      render 'new', status: :unprocessable_entity
+      render 'friends/show', status: :unprocessable_entity
     end
   end
 
@@ -20,6 +23,14 @@ class BookingsController < ApplicationController
     @friend = booking.friend
     @booking.destroy
     redirect_to friend_path(@friend), status: :see_other
+  end
+
+  def confirm
+    @friend = Friend.find(params[:friend_id])
+    @booking = Booking.new(booking_params)
+    @booking.total_price = (@booking.end_date - @booking.start_date) * @friend.daily_rate
+    @booking.user = current_user
+    @booking.friend = @friend
   end
 
   private
