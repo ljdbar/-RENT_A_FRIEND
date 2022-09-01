@@ -8,13 +8,13 @@
   <div class="cards">
     <% @friends.each do |f| %>
       <div class="card-trip">
-        <h5 class="location-title"><%= f.location %></h5>
+        <h5 class="location-title"><%= f.first_name %></h5>
         <div class="friend-index-pic">
           <a href="/friends/<%= f.id %>"><%= cl_image_tag f.photo.key, class: 'cl_img' %></a>
         </div>
         <div class="card-trip-infos">
           <div>
-            <h2><%= f.first_name %></h2>
+            <h2><%= f.location.split[0] + ' ' + f.location.split[1] %></h2>
           </div>
           <h2 class="card-trip-pricing">£ <%= f.daily_rate %> per day</h2>
         </div>
