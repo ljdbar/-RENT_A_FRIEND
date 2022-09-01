@@ -1,23 +1,38 @@
 
-.index_title {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
 
-.friend-index-pic img {
-  height: 240px;
-  width: 100%;
-}
+  .index_title {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
 
-.location-title {
-  padding: 8px;
-  padding-bottom: 4px;
-}
+  .friend-index-pic {
+    height: 240px;
+    width: 100%;
+    perspective: 1000px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    span {
+      display: none;
+    }
+  }
 
-.see-more {
-  padding-top: 6px;
-}
+  .friend-index-pic:hover {
+    height: 240px;
+    width: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    span {
+      backface-visibility: visible;
+      background-color: black;
+    }
+  }
+
+
+  .first_name {
+    padding: 8px;
+    padding-bottom: 4px;
+  }
 
 .mappy {
     margin-top: 30px;
@@ -31,3 +46,4 @@
     border-radius: 4px;
 
 }
+

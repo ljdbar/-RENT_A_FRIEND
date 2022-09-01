@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/png" href="app/assets/images/rlogo.png">
+  <link rel="shortcut icon" type="image/png" href="app/assets/images/rlogo.png">
 
 <h1 class="index_title">Available Friends</h1>
 
@@ -12,7 +12,7 @@
       <div class="card-trip">
         <h5 class="first-name"><%= f.first_name %></h5>
         <div class="friend-index-pic">
-          <a href="/friends/<%= f.id %>"><%= cl_image_tag f.photo.key, class: 'cl_img' %></a>
+          <a href="/friends/<%= f.id %>"><%= cl_image_tag f.photo.key, class: 'cl_img' %> <span>hello</span></a>
         </div>
         <div class="card-trip-infos">
           <div>
@@ -24,3 +24,16 @@
     <% end %>
   </div>
 </div>
+
+<%# <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1>
+      <p>Architect & Engineer</p>
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div> %>
