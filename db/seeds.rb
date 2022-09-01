@@ -20,7 +20,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 35,
-      'location' => 'London, E1 2BT',
+      'location' => 'Omlandsveien 1, 4560 Vanse, Norway',
       'image_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Zlatan_Ibrahimovic_%2811668830745%29.jpg/466px-Zlatan_Ibrahimovic_%2811668830745%29.jpg'
     },
     {
@@ -29,7 +29,7 @@ people =
       'gender' => 'f',
       'pronouns' => 'She/Her',
       'age' => 40,
-      'location' => 'London, EC2M 7PY',
+      'location' => '31 Strand Rd, Londonderry BT48 7BL',
       'image_url' => 'https://pyxis.nymag.com/v1/imgs/384/e16/cb21449a6a43ef7687ad70e0c3974db50b-25-Megan-Rapinoe.rsquare.w700.jpg'
     },
     {
@@ -38,7 +38,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 25,
-      'location' => 'London, E2 0DJ',
+      'location' => 'Station Rd, York YO24 1AB',
       'image_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg/1200px-Ed_Sheeran-6886_%28cropped%29.jpg'
     },
     {
@@ -47,7 +47,7 @@ people =
       'gender' => 'f',
       'pronouns' => 'She/Her',
       'age' => 35,
-      'location' => 'London, EC1N 2LL',
+      'location' => 'Nerviërsstraat 37, 3000 Leuven, Belgium',
       'image_url' => 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
@@ -56,7 +56,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'They/Them',
       'age' => 35,
-      'location' => 'London, EC4M 7AA',
+      'location' => 'Leibnizstraße 25, 10625 Berlin, Germany',
       'image_url' => 'https://images.unsplash.com/photo-1625241189662-2980453ebffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80'
     },
     {
@@ -65,7 +65,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 45,
-      'location' => 'London, E8 2JP',
+      'location' => '13 Rue Joseph Turmel, 35700 Rennes, France',
       'image_url' => 'https://images.unsplash.com/photo-1517632202059-6ff8b80d1af1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA5fHxzbWlsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
@@ -74,7 +74,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 44,
-      'location' => 'London, N1 1RU',
+      'location' => 'Falkevænget 4, 5210 Odense, Denmark',
       'image_url' => 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
     },
     {
@@ -83,7 +83,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 37,
-      'location' => 'London, E8 1HY',
+      'location' => 'High St, Aberlour AB38 9QJ',
       'image_url' => 'https://images.unsplash.com/photo-1512485694743-9c9538b4e6e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxzbWlsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
@@ -92,7 +92,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 55,
-      'location' => 'London, E1W 2BX',
+      'location' => '266 Poyser St, London E2 9RF',
       'image_url' => 'https://images.unsplash.com/photo-1615477081663-8498d3827bc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
@@ -101,7 +101,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'She/Her',
       'age' => 22,
-      'location' => 'London, WC2H 8AA',
+      'location' => '25 Lower Marsh, London SE1 7RJ',
       'image_url' => 'https://images.unsplash.com/photo-1620216464337-69f08c564cf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
@@ -110,7 +110,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'She/Her',
       'age' => 28,
-      'location' => 'London, W1C 2DT',
+      'location' => '161 Kingsland Rd, London E2 8AL',
       'image_url' => 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80'
     },
     {
@@ -119,7 +119,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'She/Her',
       'age' => 25,
-      'location' => 'London, W1D 7EQ',
+      'location' => '87 Rectory Grove, London SW4 0DR',
       'image_url' => 'https://images.unsplash.com/photo-1564460576398-ef55d99548b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
@@ -128,7 +128,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 33,
-      'location' => 'London, E1 1FA',
+      'location' => '3, Chester Court, Albany St, London NW1 4BU',
       'image_url' => 'https://www.hellomagazine.com/imagenes/celebrities/20220530141601/cristiano-ronaldo-toned-torso-sauna-selfie/0-689-676/cristiano-ronaldo-toned-torso-sauna-selfie-t.jpg'
     },
     {
@@ -137,7 +137,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 34,
-      'location' => 'London, E2 0AH',
+      'location' => '49 Church Rd, London SW13 9HH',
       'image_url' => 'https://images.unsplash.com/photo-1595349384348-3235ad10009a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
@@ -146,7 +146,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 28,
-      'location' => 'London, EC3M 7HR',
+      'location' => '57 Whitmore Gardens, London NW10 5HE',
       'image_url' => 'https://images.unsplash.com/photo-1590086783191-a0694c7d1e6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
@@ -155,7 +155,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'They/Them',
       'age' => 25,
-      'location' => 'London, W1D 7EQ',
+      'location' => '89 Turnmill St, London EC1M 5QU',
       'image_url' => 'https://images.unsplash.com/photo-1613419441661-6a5af1751d30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80'
     },
     {
@@ -164,7 +164,7 @@ people =
       'gender' => 'm',
       'pronouns' => 'She/her',
       'age' => 31,
-      'location' => 'London, EC4M 9AF',
+      'location' => 'The Vestry, 2A Mill St, London W1S 1FX',
       'image_url' => 'https://images.unsplash.com/photo-1604004215298-793943eef132?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     }
   ]
