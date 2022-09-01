@@ -1,16 +1,20 @@
-<div class="container">
+<div class="container-booking">
 
   <h3>Confirm and pay</h3>
 
-  <div class="card-product">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"/>
-    <div class="card-product-infos">
-      <p><%= @booking.friend.first_name %></p>
-      <p><%= @booking.start_date %></p>
-      <p><%= @booking.end_date %></p>
+  <div class="card-booking">
+    <%= cl_image_tag @booking.friend.photo.key, class: 'cl_img' %>
+
+    <div class="card-booking-infos">
+      <p>Friend: <%= @booking.friend.first_name %> <%= @booking.friend.last_name %> </p>
+      <p>Start Date: <%= @booking.start_date %></p>
+      <p>End Date: <%= @booking.end_date %></p>
+      <p>Total Price: £ <%= @booking.total_price %></p>
     </div>
   </div>
 
-  <%= link_to "Confirm", "/friends", class: "btn btn-flat" %>
+  <div class="btn-booking">
+    <%= link_to "Confirm", "/friends" , class: "btn btn-flat" %> <%= link_to "Back", friend_path(@booking.friend) , class: "btn btn-flat" %>
+  </div>
 
 </div>

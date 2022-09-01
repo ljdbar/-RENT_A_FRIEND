@@ -1,5 +1,4 @@
 <div class="container">
-
  <div class="friend-card-top">
     <div class="friend-img">
       <!-- Friend' image is not yet created !-->
@@ -10,7 +9,7 @@
       <h4><%= @friend.first_name.titleize %> <%= @friend.last_name.titleize %></h4>
       <p><b>Pronouns:</b> <%= @friend.pronouns.titleize %></p>
       <p><b>Categories:</b> <%= @friend.categories.titleize %></p>
-      <p><b>Location:</b> <%= @friend.location.titleize %></p>
+      <p><b>Location:</b> <%= @friend.location %></p>
       <div class="friend-bio">
       <p><b>Bio:</b> <%= @friend.bio %></p>
       </div>
@@ -27,7 +26,7 @@
         <div class="row">
 
           <div class="col">
-            <%= simple_form_for [@friend, @booking] do |f| %>
+            <%= simple_form_for [@friend, @booking], url: friend_confirm_path(@friend), method: :get do |f| %>
                 <%= f.input :start_date, as: :date, html5: true %>
                 <%= f.input :end_date, as: :date, html5: true %>
                 <%= f.submit %>

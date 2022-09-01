@@ -1,9 +1,10 @@
 class Booking < ApplicationRecord
   belongs_to :friend
   belongs_to :user
-  validates :start_date, presence: true, uniqueness: true, comparison: { greater_than: :end_date }
-  validates :end_date, presence: true, uniqueness: true
-  validates :total_price, presence: true, numericality: { only_float: true }
+
+  validates :start_date, presence: true
+  validates :end_date, presence: true, comparison: { greater_than: :start_date }
+  # validates :total_price, presence: true, numericality: { only_float: true }
   validate :start_date_cannot_be_in_the_past
 
   private

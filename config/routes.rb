@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resources :friends, only: %i[index show new create] do
+    get 'friends/:id/confirm', to: 'bookings#confirm', as: :confirm
     resources :bookings, only: %i[new create]
   end
+  resources :users, only: [:show]
   resources :bookings, only: [:destroy]
+
 end

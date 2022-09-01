@@ -15,8 +15,8 @@ User.destroy_all
 people =
   [
     {
-      'first_name' => 'iam',
-      'last_name' => 'zlatan',
+      'first_name' => 'Iam',
+      'last_name' => 'Zlatan',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 35,
@@ -24,8 +24,8 @@ people =
       'image_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Zlatan_Ibrahimovic_%2811668830745%29.jpg/466px-Zlatan_Ibrahimovic_%2811668830745%29.jpg'
     },
     {
-      'first_name' => 'megan',
-      'last_name' => 'sheehan',
+      'first_name' => 'Megan',
+      'last_name' => 'Sheehan',
       'gender' => 'f',
       'pronouns' => 'She/Her',
       'age' => 40,
@@ -33,8 +33,8 @@ people =
       'image_url' => 'https://pyxis.nymag.com/v1/imgs/384/e16/cb21449a6a43ef7687ad70e0c3974db50b-25-Megan-Rapinoe.rsquare.w700.jpg'
     },
     {
-      'first_name' => 'charlie',
-      'last_name' => 'stiles',
+      'first_name' => 'Charlie',
+      'last_name' => 'Stiles',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 25,
@@ -42,8 +42,8 @@ people =
       'image_url' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg/1200px-Ed_Sheeran-6886_%28cropped%29.jpg'
     },
     {
-      'first_name' => 'alexa',
-      'last_name' => 'sanchez',
+      'first_name' => 'Alexa',
+      'last_name' => 'Sanchez',
       'gender' => 'f',
       'pronouns' => 'She/Her',
       'age' => 35,
@@ -51,8 +51,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
-      'first_name' => 'harry',
-      'last_name' => 'crane',
+      'first_name' => 'Harry',
+      'last_name' => 'Crane',
       'gender' => 'm',
       'pronouns' => 'They/Them',
       'age' => 35,
@@ -60,8 +60,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1625241189662-2980453ebffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80'
     },
     {
-      'first_name' => 'sarah',
-      'last_name' => 'legall',
+      'first_name' => 'Sarah',
+      'last_name' => 'Legall',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 45,
@@ -69,8 +69,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1517632202059-6ff8b80d1af1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjA5fHxzbWlsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
-      'first_name' => 'kirk',
-      'last_name' => 'konnors',
+      'first_name' => 'Kirk',
+      'last_name' => 'Konnors',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 44,
@@ -78,8 +78,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
     },
     {
-      'first_name' => 'petr',
-      'last_name' => 'ilic',
+      'first_name' => 'Petr',
+      'last_name' => 'Ilic',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 37,
@@ -87,8 +87,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1512485694743-9c9538b4e6e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxzbWlsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
     },
     {
-      'first_name' => 'al',
-      'last_name' => 'bert',
+      'first_name' => 'Al',
+      'last_name' => 'Bert',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 55,
@@ -96,8 +96,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1615477081663-8498d3827bc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
-      'first_name' => 'stellar',
-      'last_name' => 'sole',
+      'first_name' => 'Stellar',
+      'last_name' => 'Sole',
       'gender' => 'm',
       'pronouns' => 'She/Her',
       'age' => 22,
@@ -105,8 +105,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1620216464337-69f08c564cf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
-      'first_name' => 'kim',
-      'last_name' => 'seo',
+      'first_name' => 'Kim',
+      'last_name' => 'Seo',
       'gender' => 'm',
       'pronouns' => 'She/Her',
       'age' => 28,
@@ -114,8 +114,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80'
     },
     {
-      'first_name' => 'summer',
-      'last_name' => 'cole',
+      'first_name' => 'Summer',
+      'last_name' => 'Cole',
       'gender' => 'm',
       'pronouns' => 'She/Her',
       'age' => 25,
@@ -123,8 +123,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1564460576398-ef55d99548b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
-      'first_name' => 'cris',
-      'last_name' => 'tiago',
+      'first_name' => 'Cris',
+      'last_name' => 'Tiago',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 33,
@@ -132,8 +132,8 @@ people =
       'image_url' => 'https://www.hellomagazine.com/imagenes/celebrities/20220530141601/cristiano-ronaldo-toned-torso-sauna-selfie/0-689-676/cristiano-ronaldo-toned-torso-sauna-selfie-t.jpg'
     },
     {
-      'first_name' => 'tim',
-      'last_name' => 'tofan',
+      'first_name' => 'Tim',
+      'last_name' => 'Tofan',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 34,
@@ -141,8 +141,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1595349384348-3235ad10009a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
-      'first_name' => 'ronan',
-      'last_name' => 'ogrady',
+      'first_name' => 'Ronan',
+      'last_name' => 'Ogrady',
       'gender' => 'm',
       'pronouns' => 'He/Him',
       'age' => 28,
@@ -150,8 +150,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1590086783191-a0694c7d1e6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
     },
     {
-      'first_name' => 'sean',
-      'last_name' => 'mendes',
+      'first_name' => 'Sean',
+      'last_name' => 'Mendes',
       'gender' => 'm',
       'pronouns' => 'They/Them',
       'age' => 25,
@@ -159,8 +159,8 @@ people =
       'image_url' => 'https://images.unsplash.com/photo-1613419441661-6a5af1751d30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80'
     },
     {
-      'first_name' => 'morfydd',
-      'last_name' => 'astor',
+      'first_name' => 'Morfydd',
+      'last_name' => 'Astor',
       'gender' => 'm',
       'pronouns' => 'She/her',
       'age' => 31,
