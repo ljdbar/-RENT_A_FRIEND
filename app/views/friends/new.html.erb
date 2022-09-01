@@ -1,4 +1,4 @@
-<h1 class="new-title"> Become a member of Friends</h1>
+<h1 class="new-title">Become a Friend</h1>
 
 <div class="container">
   <%= simple_form_for(@friend) do |x| %>
@@ -9,13 +9,13 @@
   <%= x.input :pronouns, label: "Preferred Pronouns:", placeholder: "  /  " %>
   <%= x.input :categories, collection: @categories, include_hidden: false, label: "Friend capacity CHANGE THIS" %>
   <%= x.input :bio, placeholder: "Write a little bit about yourself..." %>
-  <%# <%= x.input :photo, as: :file %>
+  <%= x.input :photo, as: :file %>
   <%= x.input :daily_rate, label: "How much do you want to charge per day?", as: :float , placeholder: "£" %>
   <%= x.submit "Submit 😎" %>
   <% end %>
 </div>
-<!-- Add as: :check_box to categories input/association  -->
 
+<!-- Add as: :check_box to categories input/association  -->
 <%# <h2> Want to join our group</h2>
 <ol>
 <li> cool background image for half screen</li>

@@ -9,6 +9,9 @@ class FriendsController < ApplicationController
   end
 
   def new
+    if !current_user.friends.empty?
+      redirect_to friend_path(current_user.friends.first)
+    end
     @friend = Friend.new
     @categories = %w[sports music funeral family date travel]
   end
@@ -27,7 +30,16 @@ class FriendsController < ApplicationController
   private
 
   def friend_params
-    params.require(:friend).permit(:first_name, :last_name, :age, :location, :pronouns, :bio, :daily_rate, :user_id, :categories)
+    params.require(:friend).permit(:first_name,
+                                   :last_name,
+                                   :age,
+                                   :location,
+                                   :pronouns,
+                                   :bio,
+                                   :daily_rate,
+                                   :user_id,
+                                   :categories,
+                                   :photo)
     #change :catagories to catagories: []
   end
 end
