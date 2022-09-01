@@ -19,7 +19,7 @@
   <div class="friend-card-bottom">
     <div class="friend-form">
       <div class="bg-white rounded p-3 shadow">
-        <h6>£<%= @friend.daily_rate %> <em>day</em></h6>
+        <h6>£<%= @friend.daily_rate.round(2) %> <em>day</em></h6>
 
         <div class="row">
 
@@ -34,7 +34,7 @@
           <hr>
 
           <!-- Total price to be updated and need to work with the booking form !-->
-          <h6>Total price: <strong>£<%= @friend.daily_rate * 7 %></strong></h6>
+          <h6>Total price: <strong>£<%= (@friend.daily_rate * 7).round(2) %></strong></h6>
 
         </div>
       </div>
