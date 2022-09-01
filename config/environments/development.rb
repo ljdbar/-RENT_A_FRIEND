@@ -60,7 +60,7 @@ Rails.application.configure do
   config.assets.quiet = true
 
   # cloudinary
-  # config.active_storage.service = :cloudinary
+  config.active_storage.service = :cloudinary
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
