@@ -3,19 +3,21 @@
     <div class="friend-img">
       <!-- Friend' image is not yet created !-->
       <%= cl_image_tag @friend.photo.key, class: 'cl_img'  %>
-      <%# <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3560&q=80" alt="testing"> %>
     </div>
 
     <div class="friend-info">
-      <h4>Name: <%= @friend.first_name %> <%= @friend.last_name %></h4>
-      <p>Location: <%= @friend.location %></p>
-      <p>Categories <%= @friend.categories %></p>
-      <p>Pronouns: <%= @friend.pronouns %></p>
-      <div class="friend-bio"><p>Bio: <%= @friend.bio %></p></div>
+      <h4><%= @friend.first_name.titleize %> <%= @friend.last_name.titleize %></h4>
+      <p><b>Pronouns:</b> <%= @friend.pronouns.titleize %></p>
+      <p><b>Categories:</b> <%= @friend.categories.titleize %></p>
+      <p><b>Location:</b> <%= @friend.location %></p>
+      <div class="friend-bio">
+      <p><b>Bio:</b> <%= @friend.bio %></p>
+      </div>
     </div>
   </div>
 
   <hr>
+
   <div class="friend-card-bottom">
     <div class="friend-form">
       <div class="bg-white rounded p-3 shadow">
@@ -42,7 +44,7 @@
 
     <div class="friend-rate-card">
       <div class="friend-rating">
-        <!-- Frirend's rating is not yet created !-->
+        <!-- Friend's rating is not yet created !-->
         <p>4.9 ⭐️⭐️⭐️⭐️⭐️</p>
       </div>
 
@@ -53,7 +55,7 @@
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
               <!-- Review and rating are not yet created !-->
-              <h2><%= @friend.user.username %></h2>
+              <h2><%= @friend.first_name.titleize %></h2>
               <p>Had a good time.</p>
             </div>
         </div>
@@ -63,7 +65,7 @@
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
               <!-- Review and rating are not yet created !-->
-              <h2><%= @friend.user.username %></h2>
+              <h2><%= @friend.first_name.titleize %></h2>
               <p>Had a very good time.</p>
             </div>
           </div>
@@ -73,7 +75,7 @@
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
               <!-- Review and rating are not yet created !-->
-              <h2><%= @friend.user.username %></h2>
+              <h2><%= @friend.first_name.titleize %></h2>
             <p>Had a really good time.</p>
             </div>
           </div>
@@ -83,7 +85,7 @@
             <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
             <div class="card-review-infos">
               <!-- Review and rating are not yet created !-->
-              <h2><%= @friend.user.username %></h2>
+              <h2><%= @friend.first_name.titleize %></h2>
               <p>Had a great time.</p>
             </div>
           </div>
