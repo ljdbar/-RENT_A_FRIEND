@@ -1,6 +1,4 @@
-// .container {
-  //   margin: 40px auto;
-  // }
+
 
   .index_title {
     text-align: center;
@@ -30,11 +28,22 @@
     }
   }
 
+
   .first_name {
     padding: 8px;
     padding-bottom: 4px;
   }
 
-  .see-more {
-    padding-top: 6px;
-  }
+.mappy {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border: 4px;
+    border-style: groove;
+    border-color: #9b9b9b;
+    box-shadow: 1px 1px;
+    border-radius: 4px;
+
+}
+

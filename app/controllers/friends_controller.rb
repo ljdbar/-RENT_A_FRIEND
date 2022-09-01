@@ -4,7 +4,9 @@ class FriendsController < ApplicationController
     @markers = @friends.geocoded.map do |friend|
       {
         lat: friend.latitude,
-        lng: friend.longitude
+        lng: friend.longitude,
+        info_window: render_to_string(partial: "info_window", locals: {friend: friend}),
+        image_url: helpers.asset_url("mappin3.png")
       }
     end
   end
