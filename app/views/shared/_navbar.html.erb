@@ -15,10 +15,10 @@
       <%= form_with url: friends_path, method: :get, class: "d-flex" do %>
         <%= text_field_tag :query,
           params[:query],
-          class: "form-control",
+          class: "form-control search-radius",
           placeholder: "Find a friend"
         %>
-        <%= submit_tag "Search", class: "btn btn-primary" %>
+        <%= submit_tag "Search", class: "btn btn-primary nav-link" %>
       <% end %>
 
 
