@@ -6,7 +6,7 @@
   height: 80px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -33,9 +33,10 @@
 }
 
 ul {
-  list-style: none;
+  list-style:none;
 }
 
 li {
   float: right;
+  padding-right: 3px;
 }
