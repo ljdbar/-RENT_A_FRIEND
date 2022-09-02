@@ -1,6 +1,12 @@
 class FriendsController < ApplicationController
   def index
-    @friends = Friend.all
+    # @friends = Friend.all
+    if params[:query].present?
+      @friends = Friend.search_by_categories_and_location_and_age(params[:query])
+    else
+      @friends = Friend.all
+    end
+
     @markers = @friends.geocoded.map do |friend|
       {
         lat: friend.latitude,

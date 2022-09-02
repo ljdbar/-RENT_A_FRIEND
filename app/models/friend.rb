@@ -10,4 +10,12 @@ class Friend < ApplicationRecord
   validates :categories, inclusion: { in: %w[sports music funeral family date travel] }
   validates :age, numericality: { only_integer: true, greater_than_or_equal_to: 18 }
   validates :daily_rate, numericality: { greater_than: 0 }
+
+  include PgSearch::Model
+  pg_search_scope :search_by_categories_and_location_and_age,
+  against: [ :categories, :location, :age ],
+  using: {
+    tsearch: { prefix: true } # <-- now `superman batm` will return something!
+  }
+
 end

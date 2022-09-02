@@ -11,40 +11,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
 
-      <%= simple_form_for :search do |f| %>
-        <%= f.input :gender, as: :radio_buttons, collection: [['0', 'female'], ['1', 'male']], label_method: :second, value_method: :first %>
+      <%= form_with url: friends_path, method: :get, class: "d-flex" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Find a friend"
+        %>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
       <% end %>
 
-
-      <%= simple_form_for :search do |f| %>
-        <%= f.input :age, collection: 18..60, prompt: "Select your age", selected: 21 %>
-      <% end %>
-
-      <%= simple_form_for :search do |f| %>
-        <%= f.input :city_id, collection: @continents, as: :grouped_select, group_method: :countries %>
-      <% end %>
-
-
-      <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-        <%= f.input :name, input_html: {value: ""} %>
-        <%= f.submit "Search", class: "btn btn-primary" %>
-      <% end %>
-
-
-
-      <p>categories</p>
-      <select class="select" data-mdb-filter="true">
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-        <option value="4">Four</option>
-        <option value="5">Five</option>
-        <option value="6">Six</option>
-        <option value="7">Seven</option>
-        <option value="8">Eight</option>
-        <option value="9">Nine</option>
-        <option value="10">Ten</option>
-      </select>
 
         <% if user_signed_in? %>
 
