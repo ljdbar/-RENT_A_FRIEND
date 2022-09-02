@@ -1,3 +1,5 @@
+<div class="space">
+
 <div class="container">
 
  <div class="friend-card-top">
@@ -33,7 +35,7 @@
               <%= simple_form_for [@friend, @booking], data: {day_counter_target: "form"}, url: friend_confirm_path(@friend), method: :get do |f| %>
                   <%= f.input :start_date, as: :date, html5: true %>
                   <%= f.input :end_date, as: :date, html5: true %>
-                  <%= f.submit %>
+                  <%= f.submit "Reserve", class: "btn btn-flat" %>
               <% end %>
             </div>
           </div>
@@ -99,4 +101,5 @@
     </div>
   </div>
 
+</div>
 </div>

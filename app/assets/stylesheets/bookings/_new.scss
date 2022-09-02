@@ -1,3 +1,7 @@
+.space {
+  margin-bottom: 120px;
+}
+
 .container-booking {
   margin: 50px auto;
 }
@@ -60,4 +64,8 @@
 .btn-flat:hover {
   background: #4D04C4;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
