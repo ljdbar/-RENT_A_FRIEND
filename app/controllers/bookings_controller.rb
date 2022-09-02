@@ -8,7 +8,7 @@ class BookingsController < ApplicationController
   def create
     @friend = Friend.find(params[:friend_id])
     @booking = Booking.new(booking_params)
-    @booking.total_price = (@booking.end_date - @booking.start_date) * @friend.daily_rate
+    @booking.total_price = (@booking.end_date - @booking.start_date + 1) * @friend.daily_rate
     @booking.user = current_user
     @booking.friend = @friend
     if @booking.save!
@@ -28,7 +28,7 @@ class BookingsController < ApplicationController
   def confirm
     @friend = Friend.find(params[:friend_id])
     @booking = Booking.new(booking_params)
-    @booking.total_price = (@booking.end_date - @booking.start_date) * @friend.daily_rate
+    @booking.total_price = (@booking.end_date - @booking.start_date + 1) * @friend.daily_rate
     @booking.user = current_user
     @booking.friend = @friend
   end
