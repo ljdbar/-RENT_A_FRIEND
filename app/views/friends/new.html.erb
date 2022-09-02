@@ -9,7 +9,7 @@
   <%= x.input :age, collection: 18..100 %>
   <%= x.input :location, label: "Hometown:" %>
   <%= x.input :pronouns, label: "Preferred Pronouns:", placeholder: "  /  " %>
-  <%= x.input :categories, collection: @categories, include_hidden: false, label: "Friend capacity CHANGE THIS" %>
+  <%= x.input :categories, collection: @categories, include_hidden: false, label: "Friend capacity:" %>
   <%= x.input :bio, placeholder: "Write a little bit about yourself..." %>
   <%= x.input :photo, as: :file %>
   <%= x.input :daily_rate, label: "How much do you want to charge per day?", as: :float , placeholder: "£" %>
