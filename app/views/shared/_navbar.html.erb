@@ -29,9 +29,9 @@
           <li class="nav-item dropdown">
 
           <% if current_user.friends.empty? %>
-              <%= image_tag "https://images.unsplash.com/photo-1633536838356-80807d2321d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3x2YjVhQ1RjTVhQUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60",  class: "avatar-large", alt: "avatar-large", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+              <%= image_tag "https://images.unsplash.com/photo-1633536838356-80807d2321d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3x2YjVhQ1RjTVhQUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60",  class: "avatar", alt: "avatar", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <% else %>
-              <%= cl_image_tag current_user.friends.first.photo.key, class: "avatar-large", alt: "avatar-large", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+              <%= cl_image_tag current_user.friends.first.photo.key, class: "avatar", alt: "avatar", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <% end %>
 
             <%#= image_tag "https://i.guim.co.uk/img/media/ae14333615408ab5d5ba6c23810be683e0d6f631/389_282_1481_889/master/1481.jpg?width=620&quality=45&fit=max&dpr=2&s=e40d632881019e92b1a02cf125d235f9", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
