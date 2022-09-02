@@ -2,6 +2,7 @@
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
+  font-family: 'Bona Nova', serif;
 }
 
 .friend-index-pic img {
@@ -30,6 +31,19 @@
     border-radius: 4px;
 }
 
+.first-name {
+  font-family: 'Bona Nova', serif;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.card-trip-pricing {
+  font-family: 'Bona Nova', serif;
+}
+
+.cards :hover{
+  // box-shadow: 0 0 16px rgba(0,0,0,0.2);
+}
 
 // .index_title {
 //   text-align: center;
