@@ -17,9 +17,9 @@ class FriendsController < ApplicationController
   end
 
   def new
-    if !current_user.friends.empty?
-      redirect_to friend_path(current_user.friends.first)
-    end
+    # if !current_user.friends.empty?
+    #   redirect_to friend_path(current_user.friends.first)
+    # end
     @friend = Friend.new
     @categories = %w[sports music funeral family date travel]
   end
