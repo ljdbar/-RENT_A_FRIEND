@@ -17,24 +17,13 @@
               <div class="friend-index-pic flip-card-front">
                 <a href="/friends/<%= f.id %>"><%= cl_image_tag f.photo.key, class: 'cl_img' %></a>
               </div>
-
-
-              <div class="flip-card-back">
-              <a class="lol" href="/friends/<%= f.id %>">
-              <h1>John Doe</h1>
-                <p>Architect & Engineer</p>
-                <p>We love that guy</p>
-              </a>
-
-              </div>
-
             </div>
           </div>
 
           <div class="card-trip-infos">
             <div>
               <%# Comment: Added random reviews %>
-              <h2><%= '⭐️' * [1,2,3,4,5].sample  %></h2>
+              <h2><%= '⭐️' * f.rating %></h2>
             </div>
             <h2 class="card-trip-pricing">£ <%= f.daily_rate %>/day</h2>
           </div>

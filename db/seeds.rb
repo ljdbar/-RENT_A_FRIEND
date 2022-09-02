@@ -185,6 +185,7 @@ people.each do |p|
     age: p['age'],
     location: p['location'],
     daily_rate: Faker::Number.decimal(l_digits: 2),
+    rating: [1,2,3,4,5].sample,
     pronouns: p['pronouns'],
     bio: "Hi, I'm #{p['first_name'].titleize}, " + Faker::Lorem.sentence(word_count: 3, supplemental: false, random_words_to_add: 50)
   )
