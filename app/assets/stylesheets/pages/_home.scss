@@ -27,19 +27,23 @@
 }
 
 .btn-ghost {
-  color: white;
-  background-color: #6A9A58;
-  border: 1px solid white;
+  color: #FFFBFC;
+  background-color: #EC058E;
+  border: 1px solid #FFFBFC;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
   // opacity: 0.6;
-  transition: 0.3s ease;
+  transition: 0.7s ease;
 }
 
 .btn-ghost:hover {
-  background-color: #547B46;
-  color: white;
-  border: 1px solid white;
-  // opacity: 1;
+  color: #EC058E;
+  background-color: #FFFBFC;
+  border: 1px solid #EC058E;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  // opacity: 0.6;
+  transition: 0.7s ease;
 }
