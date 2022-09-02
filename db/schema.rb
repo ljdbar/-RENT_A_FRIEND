@@ -68,7 +68,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_02_132006) do
     t.datetime "updated_at", null: false
     t.float "latitude"
     t.float "longitude"
-    t.integer "rating"
+    t.integer "rating", default: 4
     t.index ["user_id"], name: "index_friends_on_user_id"
   end
 

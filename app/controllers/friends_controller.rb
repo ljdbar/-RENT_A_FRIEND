@@ -50,7 +50,8 @@ class FriendsController < ApplicationController
                                    :daily_rate,
                                    :user_id,
                                    :categories, # change :catagories to catagories: []
-                                   :photo)
+                                   :photo,
+                                   :rating)
   end
 end
 
