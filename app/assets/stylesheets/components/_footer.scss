@@ -12,10 +12,12 @@
   width: 100%;
   background-color: white;
 }
+
 .footer-links {
   display: flex;
   align-items: center;
 }
+
 .footer-links a {
   color: rgb(0, 0, 0);
   opacity: 0.15;
@@ -24,10 +26,12 @@
   padding: 0px 10px;
   transition: 0.5s;
 }
+
 .footer-links a:hover {
   opacity: 1;
   color: #ea0583f6;
 }
+
 .footer .fa-heart {
   color: #D23333;
 }
