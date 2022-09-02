@@ -19,8 +19,6 @@
               </div>
 
 
-
-
               <div class="flip-card-back">
               <a class="lol" href="/friends/<%= f.id %>">
               <h1>John Doe</h1>
@@ -35,9 +33,10 @@
 
           <div class="card-trip-infos">
             <div>
-              <h2><%= f.location %></h2>
+              <%# Comment: Added random reviews %>
+              <h2><%= '⭐️' * [1,2,3,4,5].sample  %></h2>
             </div>
-            <h2 class="card-trip-pricing">£ <%= f.daily_rate %> per day</h2>
+            <h2 class="card-trip-pricing">£ <%= f.daily_rate %>/day</h2>
           </div>
       </div>
     <% end %>
