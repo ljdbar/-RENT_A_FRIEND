@@ -18,15 +18,15 @@
 
       <div data-controller="search-field">
 
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
 
-        <%= form_with url: friends_path, method: :get, class: "d-flex d-none" do %>
+        <%= form_with url: friends_path, method: :get, class: "d-flex d-none search-field" do %>
           <%= text_field_tag :query,
             params[:query],
             class: "form-control search-radius",
             placeholder: "Find a friend"
           %>
-          <%= submit_tag "Search", class: "btn btn-primary nav-link d-none" %>
+          <%= submit_tag "Search", class: "btn btn-primary nav-link d-none search-btn" %>
         <% end %>
 
       </div>
