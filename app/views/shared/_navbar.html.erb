@@ -1,4 +1,4 @@
-<%# navbar template by bootstrap and le wagon %>
+<%# bootstrap navbar %>
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
 
   <div class="container-fluid">
@@ -7,30 +7,29 @@
       <%= image_tag "Rent A Friend Logo", class: "logo" %>
     <% end %>
 
-    <%# hamburger menu for mobile screen %>
-    <div class="dropdown">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-    </div>
+    <%# mobile - hamburger menu %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
       <ul class="navbar-nav me-auto">
 
-        <%= form_with url: friends_path, method: :get, class: "d-flex" do %>
+      <div data-controller="search-field">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <%= form_with url: friends_path, method: :get, class: "d-flex d-none" do %>
           <%= text_field_tag :query,
             params[:query],
             class: "form-control search-radius",
             placeholder: "Find a friend"
           %>
-          <%= submit_tag "Search", class: "btn btn-primary nav-link" %>
+          <%= submit_tag "Search", class: "btn btn-primary nav-link d-none" %>
         <% end %>
+
+      </div>
 
         <% if user_signed_in? %>
 
