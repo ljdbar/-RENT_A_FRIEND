@@ -18,64 +18,20 @@
 
       <ul class="navbar-nav me-auto">
 
-      <div class="search" data-controller="search-field">
 
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
 
-        <%= form_with url: friends_path, method: :get, class: "d-flex d-none search-field" do %>
-          <%= text_field_tag :query,
-            params[:query],
-            class: "form-control search-radius",
-            placeholder: "Find a friend"
-          %>
-          <%= submit_tag "Search", class: "btn btn-primary nav-link d-none search-btn" %>
-        <% end %>
-
-        <i class="fa-solid fa-xmark search-hide d-none"></i>
-
+      <div class="search-box" data-controller="search-field">
+        <input type="text" placeholder="Type to search ...">
+        <div class="search-btn-a">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
       </div>
 
-      <div class="login-btn">
 
-          <% if user_signed_in? %>
 
-            <li class="nav-item active">
-              <%= link_to "See all friends", friends_path , class: "nav-link" %>
-            </li>
-
-            <%# Comment: If user is already registered as a friend then don't display the "Become a Friend" option %>
-            <% if current_user.friends.empty? %>
-              <li class="nav-item">
-                <%= link_to "Become a friend", new_friend_path, class: "nav-link" %>
-              </li>
-            <% else %>
-              <li class="nav-item">
-                <%#= Do nothing %>
-              </li>
-            <% end %>
-
-            <li class="nav-item dropdown">
-              <%# Comment: Sets a default avatar for new users
-                          else show their profile picture %>
-              <% if current_user.friends.empty? %>
-                  <%= image_tag "https://images.unsplash.com/photo-1633536838356-80807d2321d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3x2YjVhQ1RjTVhQUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60",  class: "avatar", alt: "avatar", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-              <% else %>
-                  <%= cl_image_tag current_user.friends.first.photo.key, class: "avatar", alt: "avatar", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-              <% end %>
-
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "Your Profile", user_path(current_user) , class: "dropdown-item" %>
-                <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
-              </div>
-            </li>
-
-          <% else %>
-            <li class="nav-item">
-              <%= link_to "Login", new_user_session_path, class: "nav-link login" %>
-            </li>
-          <% end %>
-
-        </div>
       </ul>
 
     </div>
