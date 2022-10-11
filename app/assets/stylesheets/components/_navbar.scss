@@ -1,53 +1,127 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: #fffbfc;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.nav-item {
-  display: flex;
+.container-fluid {
+  width: 70%;
   align-items: center;
-  justify-content: center;
-  padding-right: 10px;
+
+  .logo {
+    height: 80px;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 20px;
+
+    .search-bar {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .search-icon,
+    .search-hide {
+      cursor: pointer;
+      font-size: 24px;
+      opacity: 0.6;
+      transition: 0.2s ease;
+    }
+    .search-hide {
+      font-size: 30px;
+    }
+    .search-icon:hover,
+    .search-hide:hover {
+      opacity: 0.4;
+    }
+
+    .appear {
+      opacity: 0.6;
+      visibility: visible;
+    }
+    .disappear {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+  }
+
+  .nav-link {
+    color: white;
+    background-color: #ec058e;
+    border: 1px solid white;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: lighter;
+    transition: 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background-color: #CE047B;
+    color: white;
+    border: 1px solid white;
+    // opacity: 1;
+  }
+
+  .search-radius {
+    border-radius: 50px;
+  }
+
+  .login {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    background-color: #62BBC1 !important;
+  }
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 70px;
-}
 
-.nav-link {
-  color: white;
-  background-color: #ec058e;
-  border: 1px solid white;
-  padding: 8px 24px;
+
+.search-box {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box.active {
+  width: 350px;
+}
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #fff;
+  font-size: 18px;
   border-radius: 50px;
-  font-weight: lighter;
-  transition: 0.3s ease;
+  padding: 0 60px 0 20px;
 }
-
-.nav-link:hover {
-  background-color: #CE047B;
-  color: white;
-  border: 1px solid white;
-  // opacity: 1;
-}
-
-.navbar-lewagon .logo {
-  border-radius: 50%;
-  width: 50px;
+.search-box .search-btn-a {
   height: 50px;
-  object-fit: fill;
-}
-
-.search-radius {
+  width: 50px;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform:translateY(-50%);
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
   border-radius: 50px;
+  cursor: pointer;
 }
-
-.login {
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-  background-color: #62BBC1 !important;
+.search-box .cancel-btn {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 25px;
+  cursor: pointer;
 }
