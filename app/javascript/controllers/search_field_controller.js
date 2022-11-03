@@ -8,15 +8,20 @@ export default class extends Controller {
     const searchBtn = document.querySelector('.search-btn-a');
     const cancelBtn = document.querySelector('.cancel-btn');
     const searchBox = document.querySelector('.search-box');
+    const searchInput = document.querySelector('input');
 
     searchBtn.addEventListener('click', (event) => {
       console.log('hello search bar');
       searchBox.classList.add('active');
+      searchInput.classList.add('active');
+      cancelBtn.classList.add('active');
     })
 
     cancelBtn.addEventListener('click', (event) => {
       console.log('byebye search bar');
       searchBox.classList.remove('active');
+      searchInput.classList.remove('active');
+      cancelBtn.classList.remove('active');
     })
 
 
