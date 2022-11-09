@@ -8,21 +8,36 @@
       <%= image_tag "Rent A Friend Logo", class: "navbar-logo" %>
     <% end %>
 
-    <%# hamburger menu of search field and login btn for samll screen from bootstrap framework %>
+    <%# hamburger menu of search field and login btn for small screen from bootstrap framework %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <%# figure out the functionality later %>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+
+      <%# search field %>
       <div class="search-box" data-controller="search-field">
-        <input type="text" placeholder="Type to search ...">
         <div class="search-btn-a">
           <i class="fas fa-search"></i>
         </div>
         <div class="cancel-btn">
           <i class="fas fa-times"></i>
         </div>
+        <%= form_with url: friends_path, method: :get, class: "input" do %>
+          <%= text_field_tag :query,
+            params[:query],
+            class: "form-control search-radius",
+            placeholder: "Find a friend"
+          %>
+          <%= submit_tag "Search", class: "btn btn-primary nav-link" %>
+        <% end %>
       </div>
 
+
+      </ul>
+    </div>
 
   </div>
 
