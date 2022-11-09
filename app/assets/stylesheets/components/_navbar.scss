@@ -1,8 +1,11 @@
 .navbar-container {
+  margin: auto;
   width: 70%;
-  align-items: center;
+  padding: 8px 0px;
+  display: flex;
+  justify-content: space-between;
 
-  .logo {
+  .navbar-logo {
     height: 80px;
   }
 
